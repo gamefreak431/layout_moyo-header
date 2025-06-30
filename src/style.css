@@ -1,14 +1,21 @@
+.roboto-500 {
+  font-family: Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
 }
 
-nav {
+.header {
   display: flex;
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  background-color: #FFF;
+  justify-content: center;
   align-items: center;
+  background-color: #FFF;
+  height: 80px;
 }
