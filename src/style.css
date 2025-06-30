@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .roboto-500 {
   font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
@@ -8,14 +12,22 @@
   text-transform: uppercase;
 }
 
-body {
-  margin: 0;
-}
-
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFF;
   height: 80px;
+  flex-grow: 1;
+}
+
+.linkText {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.linkText:hover {
+  color: #007AFF;
 }
