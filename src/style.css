@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  max-width: 1200px; /* Set a maximum width for the body while styling, TODO: remove this before submission */
 }
 
 .flexbox {
@@ -9,7 +8,6 @@ body {
   align-items: center;
   background-color: #FFF;
   flex-wrap: nowrap;
-  border: 2px solid #000; /* Set a border for the header to see where flexbox is. TODO: Remove before submission */
 }
 
 .logo {
