@@ -20,8 +20,12 @@ body {
   padding: 10px;
 }
 
-.linkText {
+.nav {
   height: 60px;
+  line-height: 60px;
+}
+
+.linkText {
   font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
