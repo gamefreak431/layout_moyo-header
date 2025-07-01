@@ -28,11 +28,14 @@ body {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
-  margin: 0 20px;
 }
 
 .linkText:hover {
   color: #007AFF;
+}
+
+.linkText:nth-child(n+2):not(:last-child) {
+  margin: 0 20px;
 }
 
 .is-active {
