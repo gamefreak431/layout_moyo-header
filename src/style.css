@@ -1,72 +1,77 @@
-:root {
-  --link-hover-colour: #00acdc;
-}
+/* stylelint-disable import-notation */
+/* stylelint-disable font-family-name-quotes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-  box-sizing: border-box;
+:root {
+  --header-width: 100vw;
+  --header-height: 60px;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
-.flexbox {
-  box-sizing: border-box;
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-inline: 50px;
+  padding: 0 50px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.05);
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.img {
-  display: flex;
-  width: 40px;
+  display: block;
   height: 40px;
-  padding: 0;
+  width: 40px;
 }
 
-.nav {
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  line-height: 60px;
-  width: 75%;
+.logo__image {
+  height: 100%;
+  width: 100%;
+}
+
+.nav__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.linkText {
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
   height: 60px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
+  white-space: nowrap;
+  text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.linkText:hover {
-  color: var(--link-hover-colour);
+.nav__link:hover {
+  color: #00acdc;
 }
 
-.linkText:last-child {
-  margin-right: 0;
+.nav__link:target {
+  color: #00acdc;
 }
 
 .is-active {
-  color: var(--link-hover-colour);
-  position: relative;
+  color: #00acdc;
 }
 
 .is-active::after {
@@ -74,8 +79,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 4px;
-  background-color: var(--link-hover-colour);
-  border-radius: 8px;
+  border-radius: 2px;
+  background-color: #00acdc;
 }
